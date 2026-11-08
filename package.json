@@ -1,0 +1,13 @@
+{
+  "name": "kallpa-preuniversitario",
+  "version": "1.0.0",
+  "description": "Plataforma de cursos preuniversitarios (Node.js + SQLite)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "reset-db": "node -e \"require('fs').rmSync('data/preuniversitario.db',{force:true});console.log('Base de datos eliminada; se recreará al iniciar.')\""
+  },
+  "engines": { "node": ">=22.13" },
+  "optionalDependencies": { "better-sqlite3": "^11.0.0" },
+  "license": "ISC"
+}
